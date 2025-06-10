@@ -1,0 +1,64 @@
+/* Reset and base styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body, html, #root {
+  height: 100%;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #1e1e2f;
+  color: #ffffff;
+}
+
+/* Centered layout */
+#root > div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  text-align: center;
+  padding: 2rem;
+}
+
+/* Heading and text */
+h1 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+  color: #00d9ff;
+}
+
+p {
+  font-size: 1.5rem;
+  margin-bottom: 2rem;
+  color: #ccc;
+}
+
+/* Navigation links */
+nav {
+  margin-top: 1.5rem;
+}
+
+a {
+  margin: 0 12px;
+  text-decoration: none;
+  color: #00d9ff;
+  font-size: 1.2rem;
+  padding: 0.4rem 0.8rem;
+  border: 2px solid #00d9ff;
+  border-radius: 8px;
+  transition: background 0.3s, color 0.3s;
+}
+
+a:hover {
+  background-color: #00d9ff;
+  color: #1e1e2f;
+}
+
+/* Optional: Add some subtle shadow for elegance */
+#root > div {
+  box-shadow: 0 0 20px rgba(0, 217, 255, 0.1);
+  border-radius: 12px;
+}
